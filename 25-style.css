@@ -1,0 +1,55 @@
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5px;
+    box-shadow: 2px 2px 5px rgb(60, 7, 236);
+}
+nav > .left-icon-container >  h1{
+    padding-left: 30px;
+    text-transform: uppercase; /*isse h1 bold ho jayega */
+    font-weight: 800px;
+}
+
+nav > .right-icon-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav > .right-icon-container > a{
+    margin-right: 20px; 
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: #111; 
+    transition: 0.7s; 
+}
+nav > .right-icon-container > a:hover{
+color: rgb(108, 12, 252); /* charo propety. ko touch krne pr blue color ka ho jayega */
+opacity: 0.9;
+}
+
+nav > .right-icon-container > a:last-child{
+    margin-right: 50px;       /*last-child means last latter like contact ,,aapne right se 50px left side push ho jayega */
+}
+
+.card-container{
+    margin-top: 5rem; /* isse img. top se niche aayega */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.card > img{
+    max-width: 400px;
+    margin-left: 20px;
+    text-align: center;
+}
+
+@media screen and (max-width:768px) {        /*have max propty. of media search now */
+
+    .card-container{    /*max-width:768px krne se jb hm apne display ka size jaise hi 768px aayega to display block ho jayega and text align center ho jayega mtlab aal pic vertivaly direction me aa jayenge*/
+        display: block;
+        text-align: center;
+    }
+}    
+
